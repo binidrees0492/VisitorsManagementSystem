@@ -37,7 +37,7 @@
         // Hardcoded credentials for demo (replace with backend auth in production)
         if (username === 'admin' && password === 'password123') {
             localStorage.setItem('isAuthenticated', 'true');
-            window.location.href = 'dashboard.php';
+            window.location.href = 'dashboard.html';
         } else {
             toastMessage.textContent = 'Invalid username or password';
             toast.classList.remove('hidden');
@@ -48,4 +48,5 @@
     });
 </script>
 </body>
+
 </html>
