@@ -1,0 +1,115 @@
+.gradient-bg {
+    background: darkslategray;
+}
+.card-hover:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s;
+}
+.badge {
+    background-color: #10b981;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+.visitor-card {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: 2px solid #1e3a8a;
+    border-radius: 8px;
+}
+.shadow-custom {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.nav-button {
+    transition: transform 0.2s, background-color 0.2s;
+}
+.nav-button:hover {
+    transform: scale(1.05);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #3b82f6;
+    color: white !important;
+    border-radius: 0.375rem;
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #c7d2fe;
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+}
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #c7d2fe;
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .visitor-card,
+    .visitor-card * {
+        visibility: visible;
+    }
+    .visitor-card {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.hamburger {
+    display: block;
+}
+.nav-menu {
+    display: none;
+}
+.nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.nav-menu.open button {
+    margin: 0.5rem;
+}
+@media (min-width: 640px) {
+    .hamburger {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.table-cell {
+    max-width: 150px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+@media (max-width: 640px) {
+    .table-cell {
+        max-width: 100px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+.modal-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-open .scale-95 {
+    transform: scale(1);
+}
